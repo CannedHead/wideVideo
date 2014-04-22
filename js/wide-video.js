@@ -168,16 +168,6 @@ function prechargeVideo(){
 	playVideo("vidvid1","#353ff8","#0C2363");
 }
 
-function showSocial(responseText,statusText,xhr,$form){
-	$(".hero").fadeOut("slow",function(){
-		$(this).text("Thanks. Want to tell anyone?");
-	}).fadeIn("slow");
-
-	$("#subscriptionForm").fadeOut("slow",function(){
-		$("#social").fadeIn("slow");
-		});
-}
-
 function sizeImage(ratioImage){
 	if(typeof ratioImage=="undefined"){
 		ratioImage=getDocumentRatio();
@@ -226,7 +216,7 @@ function videoHtml(video){
 	if(!($("#"+dataVideos[0].filename).hasClass("hidden"))||force){
 		$("#video").prepend('<div class="video-box" id="'+video.boxId+'" ><video class="transparent" id="'+video.filename+'" preload="metadata"></video></div>');
 		$("#"+video.filename).append('<source src="images/videos/'+video.filename+'.mp4">');
-		$("#"+video.filename).append('<source src="images/videos/'+video.filename+'.ogv">');
+		$("#"+video.filename).append('<source src="images/videos/'+video.filename+'.ogg">');
 		$("#"+video.filename).append('<source src="images/videos/'+video.filename+'.webm">');
 	}
 	else{
