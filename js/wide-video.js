@@ -281,3 +281,4 @@ function videoSlide(i){
 	$("#"+next_v.boxId).css("opacity",0).delay(100).animate({opacity:1},400).css("zIndex",-2).animate({zIndex:-1},200).toggleClass("expand");
 	$("#"+curr_v.boxId).css("opacity",1).delay(100).animate({opacity:0},800).css("zIndex",-1).animate({zIndex:-2},200).toggleClass("expand");
 }
+
